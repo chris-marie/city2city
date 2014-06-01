@@ -21,7 +21,8 @@ http://www.quandl.com/help/api
 your Authorization Token, so we should be fine for now.
 
 -Zillow:
-
+Example:
+http://www.quandl.com/help/api-for-housing-data
 
 
 */
