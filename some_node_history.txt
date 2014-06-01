@@ -1,0 +1,1680 @@
+[1G[0J> [3GsearchAll("zillow prices (cities)", {'format': 'json', 'per_page': 10000}, 15, function(res) { results = res; console.log("Got it boo!"); });
+searchAll("zillow prices (cities)", {'format': 'json', 'per_page': 10000}, 15, function(res) { results = res; console.log("Got it boo!"); });
+undefined
+[1G[0J> [3G
+
+undefined
+[1G[0J> [3GFetched page 0
+Fetched page 1
+Fetched page 2
+Fetched page 3
+Fetched page 4
+Fetched page 5
+Fetched page 6
+Fetched page 7
+Fetched page 8
+Fetched page 9
+Fetched page 10
+Fetched page 11
+Fetched page 12
+Fetched page 13
+Fetched page 14
+Got it boo!
+
+
+undefined
+[1G[0J> [3Gvar resultsByCity = getCities(results.docs);
+var resultsByCity = getCities(results.docs);
+undefined
+[1G[0J> [3Gu.keys(resultsByCity)
+u.keys(resultsByCity)
+[ 'Walterville_OR',
+  'Dexter_OR',
+  'Marcola_OR',
+  'Rockville_IN',
+  'Unionville_IN',
+  'Drain_OR',
+  'Stilesville_IN',
+  'Lakeville_IN',
+  'Elmira_OR',
+  'Lowell_OR',
+  'Mapleton_OR',
+  'Vida_OR',
+  'Corbett_OR',
+  'Milford_IN',
+  'Creswell_OR',
+  'Brookville_IN',
+  'Vincennes_IN',
+  'Markle_IN',
+  'Peru_IN',
+  'Mentone_IN',
+  'Spiceland_IN',
+  'Arlington_IN',
+  'Montpelier_IN',
+  'Wawaka_IN',
+  'Yamhill_OR',
+  'Poseyville_IN',
+  'Harlan_IN',
+  'Upland_IN',
+  'Francesville_IN',
+  'Winchester_OR',
+  'Quincy_IN',
+  'Colfax_IN',
+  'Haubstadt_IN',
+  'Homecroft_IN',
+  'Borden_IN',
+  'Fremont_IN',
+  'Neotsu_OR',
+  'Wadesville_IN',
+  'Corunna_IN',
+  'Wabash_IN',
+  'Akron_IN',
+  'Huntington_OR',
+  'Brightwood_OR',
+  'Waldron_IN',
+  'Oxford_IN',
+  'Blodgett_OR',
+  'Windfall_IN',
+  'Gervais_OR',
+  'Lapel_IN',
+  'Metamora_IN',
+  'Bicknell_IN',
+  'Fountaintown_IN',
+  'Ridgeville_IN',
+  'Clermont_IN',
+  'Bristow_IN',
+  'Selma_IN',
+  'Linden_IN',
+  'Remington_IN',
+  'Medora_IN',
+  'Covington_IN',
+  'Wolcott_IN',
+  'Elkton_OR',
+  'Roanoke_IN',
+  'Monroeville_IN',
+  'Aumsville_OR',
+  'Hudson_IN',
+  'Lakeside_OR',
+  'Poland_IN',
+  'Cromwell_IN',
+  'Brownsville_OR',
+  'Scio_OR',
+  'Waterloo_IN',
+  'Lagrange_IN',
+  'Attica_IN',
+  'Otisco_IN',
+  'Decatur_IN',
+  'Dundee_OR',
+  'Hamilton_IN',
+  'Oakridge_OR',
+  'Amity_OR',
+  'Howe_IN',
+  'Rockcreek_OR',
+  'Knightstown_IN',
+  'Logansport_IN',
+  'Hanover_IN',
+  'Gearhart_OR',
+  'Garrett_IN',
+  'Marengo_IN',
+  'Huntertown_IN',
+  'Edinburgh_IN',
+  'Milan_IN',
+  'Shipshewana_IN',
+  'Jefferson_OR',
+  'Palmyra_IN',
+  'Shadeland_IN',
+  'Wilderville_OR',
+  'Glide_OR',
+  'Shoals_IN',
+  'Kirklin_IN',
+  'Shirley_IN',
+  'Laurel_IN',
+  'Fredericksburg_IN',
+  'Medaryville_IN',
+  'Reelsville_IN',
+  'Rainier_OR',
+  'Ramsey_IN',
+  'Halfway_OR',
+  'Toledo_OR',
+  'Utica_IN',
+  'Butlerville_IN',
+  'Gates_OR',
+  'Dayton_IN',
+  'Farmland_IN',
+  'Summerville_OR',
+  'Pierceton_IN',
+  'Atlanta_IN',
+  'Dale_IN',
+  'Wheeler_OR',
+  'Markleville_IN',
+  'Florence_IN',
+  'Kimmell_IN',
+  'Bennington_IN',
+  'Neskowin_OR',
+  'Avilla_IN',
+  'Nappanee_IN',
+  'Morristown_IN',
+  'Monroe_OR',
+  'Winamac_IN',
+  'Westport_IN',
+  'Harrisburg_OR',
+  'Aurora_OR',
+  'Middletown_IN',
+  'Wanatah_IN',
+  'Culver_OR',
+  'Metzger_OR',
+  'Gosport_IN',
+  'Fortville_IN',
+  'Dillsboro_IN',
+  'Ladoga_IN',
+  'Versailles_IN',
+  'Bremen_IN',
+  'Veneta_OR',
+  'Austin_IN',
+  'Morocco_IN',
+  'Washington_IN',
+  'Churubusco_IN',
+  'Vernonia_OR',
+  'Fowler_IN',
+  'Summitville_IN',
+  'Alsea_OR',
+  'Clackamas_OR',
+  'Florence_OR',
+  'Hebron_IN',
+  'Newport_OR',
+  'Otis_OR',
+  'Winston_OR',
+  'Monmouth_OR',
+  'Cornelius_OR',
+  'Stayton_OR',
+  'Coquille_OR',
+  'Fairland_IN',
+  'Salem_IN',
+  'Boonville_IN',
+  'Nehalem_OR',
+  'Canby_OR',
+  'Wilsonville_OR',
+  'Highland_IN',
+  'Gary_IN',
+  'Wheatfield_IN',
+  'Cloverdale_OR',
+  'Eugene_OR',
+  'Carmel_IN',
+  'Noblesville_IN',
+  'Sherwood_OR',
+  'Aurora_IN',
+  'Medford_OR',
+  'Seaside_OR',
+  'Brownsburg_IN',
+  'McMinnville_OR',
+  'Sandy_OR',
+  'Bluffton_IN',
+  'Keizer_OR',
+  'Sutherlin_OR',
+  'Aloha_OR',
+  'Bristol_IN',
+  'Beaverton_OR',
+  'Osceola_IN',
+  'Charlestown_IN',
+  'Greendale_IN',
+  'Gresham_OR',
+  'Roseburg_OR',
+  'Elgin_OR',
+  'Pendleton_IN',
+  'Monticello_IN',
+  'Goshen_IN',
+  'Lebanon_OR',
+  'Woodburn_OR',
+  'Corydon_IN',
+  'Delphi_IN',
+  'Butler_IN',
+  'Mitchell_IN',
+  'Zionsville_IN',
+  'Westville_IN',
+  'Cloverdale_IN',
+  'Connersville_IN',
+  'Mooresville_IN',
+  'Danville_IN',
+  'Springville_IN',
+  'Martinsville_IN',
+  'Westfield_IN',
+  'Albany_OR',
+  'Greenville_IN',
+  'Kouts_IN',
+  'Winfield_IN',
+  'Portage_IN',
+  'Georgetown_IN',
+  'Angola_IN',
+  'Valparaiso_IN',
+  'Arcadia_IN',
+  'Troutdale_OR',
+  'Silverton_OR',
+  'Sublimity_OR',
+  'Madras_OR',
+  'Merrillville_IN',
+  'Sheridan_IN',
+  'Lebanon_IN',
+  'Waldport_OR',
+  'Ossian_IN',
+  'Edgewood_IN',
+  'Middlebury_IN',
+  'Jeffersonville_IN',
+  'Independence_OR',
+  'Albion_IN',
+  'Pendleton_OR',
+  'Scappoose_OR',
+  'Yorktown_IN',
+  'Mishawaka_IN',
+  'Lyons_OR',
+  'Lafayette_IN',
+  'Scottsburg_IN',
+  'Boring_OR',
+  'Madison_IN',
+  'Tidewater_OR',
+  'Glendale_OR',
+  'Bloomington_IN',
+  'Chandler_IN',
+  'Warren_IN',
+  'Freetown_IN',
+  'Vevay_IN',
+  'Astoria_OR',
+  'Talent_OR',
+  'Monon_IN',
+  'Clayton_IN',
+  'Gladstone_OR',
+  'Syracuse_IN',
+  'Riddle_OR',
+  'Andrews_IN',
+  'Enterprise_OR',
+  'Nyssa_OR',
+  'Newberg_OR',
+  'Lizton_IN',
+  'Hayesville_OR',
+  'Clatskanie_OR',
+  'Monrovia_IN',
+  'Lakeview_OR',
+  'Franklin_IN',
+  'Ashland_OR',
+  'TheDalles_OR',
+  'Philomath_OR',
+  'Brookings_OR',
+  'Ontario_OR',
+  'Redmond_OR',
+  'Evansville_IN',
+  'Bandon_OR',
+  'Rushville_IN',
+  'Milwaukie_OR',
+  'Whiting_IN',
+  'Chiloquin_OR',
+  'Corvallis_OR',
+  'Welches_OR',
+  'Fishers_IN',
+  'Frankfort_IN',
+  'Bend_OR',
+  'Dyer_IN',
+  'Porter_IN',
+  'Schererville_IN',
+  'Dallas_OR',
+  'Portland_OR',
+  'Molalla_OR',
+  'Estacada_OR',
+  'Warsaw_IN',
+  'Cove_OR',
+  'Greensburg_IN',
+  'Bainbridge_IN',
+  'Roachdale_IN',
+  'Speedway_IN',
+  'Siletz_OR',
+  'Fillmore_IN',
+  'Brownstown_IN',
+  'Bright_IN',
+  'Henryville_IN',
+  'Fairview_OR',
+  'Heltonville_IN',
+  'Argos_IN',
+  'Orland_IN',
+  'Plymouth_IN',
+  'Russiaville_IN',
+  'Granger_IN',
+  'Whitestown_IN',
+  'Kokomo_IN',
+  'Chesterton_IN',
+  'Anderson_IN',
+  'Salem_OR',
+  'Loogootee_IN',
+  'Bargersville_IN',
+  'Lanesville_IN',
+  'Trafalgar_IN',
+  'Clinton_IN',
+  'Nashville_IN',
+  'Hammond_IN',
+  'Terrebonne_OR',
+  'Bloomfield_IN',
+  'Knox_IN',
+  'Beavercreek_OR',
+  'Morgantown_IN',
+  'Indianapolis_IN',
+  'Gaston_OR',
+  'Richmond_IN',
+  'Marion_IN',
+  'Munster_IN',
+  'Albany_IN',
+  'Crawfordsville_IN',
+  'Prineville_OR',
+  'Tipton_IN',
+  'Newburgh_IN',
+  'McCordsville_IN',
+  'Avon_IN',
+  'Batesville_IN',
+  'Tigard_OR',
+  'Hobart_IN',
+  'Hillsboro_OR',
+  'Lowell_IN',
+  'Spencer_IN',
+  'Damascus_OR',
+  'Flora_IN',
+  'Hope_IN' ]
+[1G[0J> [3Gu.keys(resultsByCity).length
+u.keys(resultsByCity).length
+346
+[1G[0J> [3Gu.each(u.keys(resultsByCity), function(key) { console.log(key + " = " + resultsByCity[key].length; });
+u.each(u.keys(resultsByCity), function(key) { console.log(key + " = " + resultsByCity[key].length; });
+[1G[0J... [5G
+
+[1G[0J... [5G  C-c C-c
+[1G[0J> [3Gu.each(u.keys(resultsByCity), function(key) { console.log(key + " = " + resultsByCity[key].length); });
+u.each(u.keys(resultsByCity), function(key) { console.log(key + " = " + resultsByCity[key].length); });
+Walterville_OR = 45
+Dexter_OR = 45
+Marcola_OR = 45
+Rockville_IN = 30
+Unionville_IN = 30
+Drain_OR = 30
+Stilesville_IN = 15
+Lakeville_IN = 15
+Elmira_OR = 45
+Lowell_OR = 30
+Mapleton_OR = 45
+Vida_OR = 15
+Corbett_OR = 45
+Milford_IN = 30
+Creswell_OR = 60
+Brookville_IN = 15
+Vincennes_IN = 15
+Markle_IN = 15
+Peru_IN = 15
+Mentone_IN = 15
+Spiceland_IN = 30
+Arlington_IN = 30
+Montpelier_IN = 15
+Wawaka_IN = 30
+Yamhill_OR = 30
+Poseyville_IN = 30
+Harlan_IN = 30
+Upland_IN = 30
+Francesville_IN = 30
+Winchester_OR = 30
+Quincy_IN = 30
+Colfax_IN = 30
+Haubstadt_IN = 30
+Homecroft_IN = 30
+Borden_IN = 30
+Fremont_IN = 30
+Neotsu_OR = 30
+Wadesville_IN = 30
+Corunna_IN = 30
+Wabash_IN = 15
+Akron_IN = 30
+Huntington_OR = 30
+Brightwood_OR = 30
+Waldron_IN = 30
+Oxford_IN = 30
+Blodgett_OR = 30
+Windfall_IN = 30
+Gervais_OR = 30
+Lapel_IN = 30
+Metamora_IN = 15
+Bicknell_IN = 30
+Fountaintown_IN = 30
+Ridgeville_IN = 30
+Clermont_IN = 30
+Bristow_IN = 30
+Selma_IN = 30
+Linden_IN = 30
+Remington_IN = 30
+Medora_IN = 30
+Covington_IN = 15
+Wolcott_IN = 30
+Elkton_OR = 15
+Roanoke_IN = 30
+Monroeville_IN = 15
+Aumsville_OR = 15
+Hudson_IN = 30
+Lakeside_OR = 45
+Poland_IN = 15
+Cromwell_IN = 15
+Brownsville_OR = 30
+Scio_OR = 15
+Waterloo_IN = 30
+Lagrange_IN = 15
+Attica_IN = 15
+Otisco_IN = 15
+Decatur_IN = 15
+Dundee_OR = 15
+Hamilton_IN = 30
+Oakridge_OR = 30
+Amity_OR = 15
+Howe_IN = 15
+Rockcreek_OR = 15
+Knightstown_IN = 15
+Logansport_IN = 15
+Hanover_IN = 15
+Gearhart_OR = 15
+Garrett_IN = 15
+Marengo_IN = 15
+Huntertown_IN = 30
+Edinburgh_IN = 15
+Milan_IN = 15
+Shipshewana_IN = 30
+Jefferson_OR = 15
+Palmyra_IN = 15
+Shadeland_IN = 30
+Wilderville_OR = 30
+Glide_OR = 15
+Shoals_IN = 15
+Kirklin_IN = 30
+Shirley_IN = 30
+Laurel_IN = 30
+Fredericksburg_IN = 30
+Medaryville_IN = 30
+Reelsville_IN = 30
+Rainier_OR = 30
+Ramsey_IN = 30
+Halfway_OR = 15
+Toledo_OR = 45
+Utica_IN = 30
+Butlerville_IN = 30
+Gates_OR = 30
+Dayton_IN = 30
+Farmland_IN = 30
+Summerville_OR = 30
+Pierceton_IN = 30
+Atlanta_IN = 30
+Dale_IN = 30
+Wheeler_OR = 30
+Markleville_IN = 30
+Florence_IN = 30
+Kimmell_IN = 30
+Bennington_IN = 15
+Neskowin_OR = 15
+Avilla_IN = 15
+Nappanee_IN = 30
+Morristown_IN = 15
+Monroe_OR = 15
+Winamac_IN = 15
+Westport_IN = 15
+Harrisburg_OR = 15
+Aurora_OR = 15
+Middletown_IN = 30
+Wanatah_IN = 15
+Culver_OR = 15
+Metzger_OR = 15
+Gosport_IN = 15
+Fortville_IN = 15
+Dillsboro_IN = 15
+Ladoga_IN = 15
+Versailles_IN = 15
+Bremen_IN = 30
+Veneta_OR = 15
+Austin_IN = 15
+Morocco_IN = 30
+Washington_IN = 30
+Churubusco_IN = 15
+Vernonia_OR = 30
+Fowler_IN = 15
+Summitville_IN = 30
+Alsea_OR = 15
+Clackamas_OR = 15
+Florence_OR = 30
+Hebron_IN = 30
+Newport_OR = 30
+Otis_OR = 15
+Winston_OR = 30
+Monmouth_OR = 45
+Cornelius_OR = 45
+Stayton_OR = 30
+Coquille_OR = 30
+Fairland_IN = 30
+Salem_IN = 15
+Boonville_IN = 15
+Nehalem_OR = 30
+Canby_OR = 30
+Wilsonville_OR = 15
+Highland_IN = 15
+Gary_IN = 15
+Wheatfield_IN = 15
+Cloverdale_OR = 30
+Eugene_OR = 30
+Carmel_IN = 15
+Noblesville_IN = 15
+Sherwood_OR = 15
+Aurora_IN = 15
+Medford_OR = 15
+Seaside_OR = 30
+Brownsburg_IN = 15
+McMinnville_OR = 15
+Sandy_OR = 15
+Bluffton_IN = 15
+Keizer_OR = 15
+Sutherlin_OR = 15
+Aloha_OR = 15
+Bristol_IN = 15
+Beaverton_OR = 15
+Osceola_IN = 30
+Charlestown_IN = 15
+Greendale_IN = 15
+Gresham_OR = 30
+Roseburg_OR = 15
+Elgin_OR = 30
+Pendleton_IN = 15
+Monticello_IN = 15
+Goshen_IN = 15
+Lebanon_OR = 30
+Woodburn_OR = 30
+Corydon_IN = 15
+Delphi_IN = 15
+Butler_IN = 30
+Mitchell_IN = 15
+Zionsville_IN = 15
+Westville_IN = 15
+Cloverdale_IN = 15
+Connersville_IN = 15
+Mooresville_IN = 15
+Danville_IN = 15
+Springville_IN = 15
+Martinsville_IN = 15
+Westfield_IN = 15
+Albany_OR = 30
+Greenville_IN = 15
+Kouts_IN = 15
+Winfield_IN = 30
+Portage_IN = 30
+Georgetown_IN = 30
+Angola_IN = 15
+Valparaiso_IN = 15
+Arcadia_IN = 15
+Troutdale_OR = 30
+Silverton_OR = 15
+Sublimity_OR = 15
+Madras_OR = 15
+Merrillville_IN = 15
+Sheridan_IN = 15
+Lebanon_IN = 45
+Waldport_OR = 30
+Ossian_IN = 30
+Edgewood_IN = 30
+Middlebury_IN = 30
+Jeffersonville_IN = 15
+Independence_OR = 15
+Albion_IN = 15
+Pendleton_OR = 30
+Scappoose_OR = 30
+Yorktown_IN = 15
+Mishawaka_IN = 15
+Lyons_OR = 15
+Lafayette_IN = 30
+Scottsburg_IN = 30
+Boring_OR = 15
+Madison_IN = 15
+Tidewater_OR = 15
+Glendale_OR = 15
+Bloomington_IN = 30
+Chandler_IN = 15
+Warren_IN = 15
+Freetown_IN = 15
+Vevay_IN = 15
+Astoria_OR = 45
+Talent_OR = 30
+Monon_IN = 30
+Clayton_IN = 30
+Gladstone_OR = 15
+Syracuse_IN = 15
+Riddle_OR = 15
+Andrews_IN = 15
+Enterprise_OR = 15
+Nyssa_OR = 15
+Newberg_OR = 30
+Lizton_IN = 15
+Hayesville_OR = 15
+Clatskanie_OR = 30
+Monrovia_IN = 15
+Lakeview_OR = 15
+Franklin_IN = 30
+Ashland_OR = 15
+TheDalles_OR = 15
+Philomath_OR = 15
+Brookings_OR = 15
+Ontario_OR = 15
+Redmond_OR = 15
+Evansville_IN = 15
+Bandon_OR = 15
+Rushville_IN = 15
+Milwaukie_OR = 30
+Whiting_IN = 15
+Chiloquin_OR = 15
+Corvallis_OR = 30
+Welches_OR = 15
+Fishers_IN = 15
+Frankfort_IN = 15
+Bend_OR = 30
+Dyer_IN = 15
+Porter_IN = 15
+Schererville_IN = 15
+Dallas_OR = 15
+Portland_OR = 30
+Molalla_OR = 30
+Estacada_OR = 15
+Warsaw_IN = 30
+Cove_OR = 15
+Greensburg_IN = 15
+Bainbridge_IN = 15
+Roachdale_IN = 15
+Speedway_IN = 30
+Siletz_OR = 15
+Fillmore_IN = 15
+Brownstown_IN = 15
+Bright_IN = 15
+Henryville_IN = 30
+Fairview_OR = 15
+Heltonville_IN = 15
+Argos_IN = 15
+Orland_IN = 15
+Plymouth_IN = 30
+Russiaville_IN = 15
+Granger_IN = 15
+Whitestown_IN = 15
+Kokomo_IN = 15
+Chesterton_IN = 15
+Anderson_IN = 15
+Salem_OR = 15
+Loogootee_IN = 15
+Bargersville_IN = 15
+Lanesville_IN = 15
+Trafalgar_IN = 15
+Clinton_IN = 15
+Nashville_IN = 15
+Hammond_IN = 15
+Terrebonne_OR = 15
+Bloomfield_IN = 15
+Knox_IN = 15
+Beavercreek_OR = 15
+Morgantown_IN = 15
+Indianapolis_IN = 15
+Gaston_OR = 15
+Richmond_IN = 15
+Marion_IN = 15
+Munster_IN = 15
+Albany_IN = 15
+Crawfordsville_IN = 15
+Prineville_OR = 15
+Tipton_IN = 15
+Newburgh_IN = 15
+McCordsville_IN = 15
+Avon_IN = 15
+Batesville_IN = 15
+Tigard_OR = 15
+Hobart_IN = 15
+Hillsboro_OR = 15
+Lowell_IN = 15
+Spencer_IN = 15
+Damascus_OR = 15
+Flora_IN = 15
+Hope_IN = 15
+
+
+undefined
+[1G[0J> [3Gu.pluck(resultsByCity['Creswell_OR'], 'name')
+u.pluck(resultsByCity['Creswell_OR'], 'name')
+[ 'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR',
+  'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR' ]
+[1G[0J> [3Gu.uniq(u.pluck(resultsByCity['Creswell_OR'], 'name'))
+u.uniq(u.pluck(resultsByCity['Creswell_OR'], 'name'))
+[ 'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  'Zillow Metrics (Cities): Median Sale Price - Creswell, OR',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - Creswell, OR',
+  'Zillow Metrics (Cities): Median List Price - Creswell, OR' ]
+[1G[0J> [3GresultsByCity['Creswell_OR'][0]
+resultsByCity['Creswell_OR'][0]
+{ id: 7186391,
+  source_code: 'ZILLOW',
+  source_name: 'Zillow Real Estate Research',
+  code: 'MCITY_MEDIANPCTOFPRICEREDUCTION_ALLHOMES_CRESWELLOR',
+  name: 'Zillow Metrics (Cities): Median Price Cut (%) - Creswell, OR',
+  urlize_name: 'Zillow-Metrics-Cities-Median-Price-Cut-Creswell-OR',
+  description: 'Median of the percentage of price reduction for homes whose prices have been reduced in the past full month. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+  updated_at: '2014-05-07T18:27:25Z',
+  frequency: 'monthly',
+  from_date: '2010-03-31',
+  to_date: '2014-01-31',
+  column_names: [ 'Date', 'Creswell' ],
+  private: false,
+  type: null,
+  display_url: 'http://files.zillowstatic.com/research/public/City/City_MedianPctOfPriceReduction_AllHomes.csv' }
+
+
+
+
+
+
+
+[1G[0J> [3Gfunction getCities(resultArray) {
+    var pattern = new RegExp('.*[,\-]+\([^,]+\), *\([A-Z][A-Z]\)');
+
+    var out = u.map(results.docs, function(it) { 
+	var newName = it.name.replace(pattern, "$1_$2"); 
+	if(newName.indexOf("(") !== -1 || newName.indexOf("-") !== -1 || newName.indexOf(",") !== -1) { 
+	    return null;
+	} else { 
+	    return {'cityName':newName.replace(new RegExp(" ","g"), ""), 'result': it};
+	}
+    }).filter(function(it) { return it !== null; });
+    out = u.groupBy(out, 'cityName');
+    u.each(out, function(value, key) { out[key] = u.pluck(value, 'result'); });
+    return out;
+}
+[1G[0J> [3GsearchAll("zillow (cities) san francisco", {'format': 'json', 'per_page': 10000}, 3, function(res) { results = res; console.log("Got it boo!"); });
+searchAll("zillow (cities) san francisco", {'format': 'json', 'per_page': 10000}, 3, function(res) { results = res; console.log("Got it boo!"); });
+
+[1G[0J> [3GFetched page 0
+
+[1G[0J> [3GFetched page 1 
+[1G[0J> [3GFetched page 2
+Got it boo!
+[1G[0J> [3Gresults.docs.length
+results.docs.length
+1500
+[1G[0J> [3Gu.uniq(u.pluck(results.docs, "name"))
+u.uniq(u.pluck(results.docs, "name"))
+[ 'Zillow Metrics (Cities): Inventory Supply (Beta) - San Francisco, CA',
+  'Zillow Metrics (Cities): Total Homes Sold - San Francisco, CA',
+  'Zillow Metrics (Cities): Median Sale Price - San Francisco, CA',
+  'Zillow Metrics (Cities): Increasing Values (%) - South San Francisco, CA',
+  'Zillow Home Value Index (Cities): Condominiums - San Francisco, CA',
+  'Zillow Metrics (Cities): Decreasing Values (%) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Decreasing Values (%) - San Francisco, CA',
+  'Zillow Metrics (Cities): Median Price Cut (%) - San Francisco, CA',
+  'Zillow Metrics (Cities): Sold for Gain (%) - San Francisco, CA',
+  'Zillow Metrics (Cities): Median List Price - San Francisco, CA',
+  'Zillow Metrics (Cities): Foreclosure Resales (%) - San Francisco, CA',
+  'Zillow Metrics (Cities): Foreclosure Resales (%) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Sold for Loss (%) - San Francisco, CA',
+  'Zillow Metrics (Cities): Increasing Values (%) - San Francisco, CA',
+  'Stifel Finanical Corp. ( SF ) - Cash',
+  'Stifel Finanical Corp. ( SF ) - Revenues',
+  'Stifel Finanical Corp. ( SF ) - Dividends',
+  'Stifel Finanical Corp. ( SF ) - Depreciation',
+  'Stifel Financial Corp. (SF)',
+  'THE BRANDGENERAT. SF -,05 (MRNA)',
+  'VERW.U.PRIVATBK SF 10 (3VF)',
+  'NOVARTIS NAM. SF 0,50 (NOT)',
+  'Zillow Metrics (Cities): Inventory Supply (Beta) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Homes for Sale (Beta) - San Francisco, CA',
+  'Zillow Metrics (Cities): Homes for Sale (Beta) - South San Francisco, CA',
+  'Zillow Home Value Index (Cities): Middle Tier - San Francisco, CA',
+  'Zillow Metrics (Cities): Homes Foreclosed (Out of 10k) - San Francisco, CA',
+  'Zillow Metrics (Cities): Listings with Price Cuts (%) - San Francisco, CA',
+  'Zillow Home Value Index (Cities): Condominiums - South San Francisco, CA',
+  'Zillow Home Value Index (Cities): Top Tier - San Francisco, CA',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - San Francisco, CA',
+  'Zillow Metrics (Cities): Price-to-Rent Ratio - South San Francisco, CA',
+  'Zillow Home Value Index (Cities): Bottom Tier - San Francisco, CA',
+  'Zillow Metrics (Cities): Homes for Rent (Rent) - San Francisco, CA',
+  'Zillow Metrics (Cities): Homes for Rent (Rent) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Sold for Gain (%) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Median List Price - South San Francisco, CA',
+  'Zillow Metrics (Cities): Sold in the Past Year (%) - San Francisco, CA',
+  'Zillow Metrics (Cities): Sold in the Past Year (%) - South San Francisco, CA',
+  'Zillow Rent Index (Cities): Rentals All Homes - San Francisco, CA',
+  'Zillow Metrics (Cities): Median Price Cut (%) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Sale-to-List Price Ratio - San Francisco, CA',
+  'Zillow Home Value Index (Cities): All Homes - San Francisco, CA',
+  'Zillow Metrics (Cities): Median Sale Price - South San Francisco, CA',
+  'Zillow Metrics (Cities): Sold for Loss (%) - South San Francisco, CA',
+  'Zillow Metrics (Cities): Listings with Price Cuts (%) - South San Francisco, CA',
+  'Stifel Finanical Corp. ( SF ) - Cash as Percentage of Revenues',
+  'Stifel Finanical Corp. ( SF ) - Book Value of Assets',
+  'Stifel Finanical Corp. ( SF ) - Reinvestment Rate',
+  'Stifel Finanical Corp. ( SF ) - Institutional Holdings',
+  'Stifel Finanical Corp. ( SF ) - Reinvestment Amount',
+  'Stifel Finanical Corp. ( SF ) - Total Debt',
+  'Stifel Finanical Corp. ( SF ) - Net Margin',
+  'Stifel Finanical Corp. ( SF ) - Expected Growth in Revenues',
+  'Stifel Finanical Corp. ( SF ) - Capital Expenditures',
+  'Stifel Finanical Corp. ( SF ) - Trailing Net Income',
+  'Stifel Finanical Corp. ( SF ) - Return on Equity',
+  'Stifel Finanical Corp. ( SF ) - Enterprise Value',
+  'Stifel Finanical Corp. ( SF ) - Current PE Ratio',
+  'Stifel Finanical Corp. ( SF ) - Dividend Yield',
+  'Stifel Finanical Corp. ( SF ) - Trailing Revenues',
+  'Stifel Finanical Corp. ( SF ) - Effective Tax Rate',
+  'Stifel Finanical Corp. ( SF ) - EV To Sales Ratio',
+  'Stifel Finanical Corp. ( SF ) - Correlation with the Market',
+  'Stifel Finanical Corp. ( SF ) - Hi-Lo Risk',
+  'Stifel Finanical Corp. ( SF ) - Forward PE Ratio',
+  'Stifel Finanical Corp. ( SF ) - Trailing PE Ratio',
+  'Stifel Finanical Corp. ( SF ) - PE to Growth Ratio',
+  'Stifel Finanical Corp. ( SF ) - EV to EBIT Ratio',
+  'Stifel Finanical Corp. ( SF ) - EV to EBITDA Ratio',
+  'Stifel Finanical Corp. ( SF ) - Price to Sales Ratio',
+  'Stifel Finanical Corp. ( SF ) - Payout Ratio',
+  'Stifel Finanical Corp. ( SF ) - Net Income',
+  'Stifel Finanical Corp. ( SF ) - EBIT for Previous Period',
+  'Stifel Finanical Corp. ( SF ) - Book Value of Equity',
+  'Stifel Finanical Corp. ( SF ) - Firm Value',
+  'Stifel Finanical Corp. ( SF ) - Market Capitalization',
+  'Stifel Finanical Corp. ( SF ) - Return on Capital',
+  'Stifel Finanical Corp. ( SF ) - Number of Shares Outstanding',
+  'Stifel Finanical Corp. ( SF ) - Insider Holdings',
+  'Stifel Finanical Corp. ( SF ) - Invested Capital',
+  'Stifel Finanical Corp. ( SF ) - Trading Volume',
+  'Stifel Finanical Corp. ( SF ) - Value Line Beta',
+  'Population of San Francisco, CDB, Argentina',
+  'MYGUIDE INTERNET SF-,01 (3MYA)',
+  'VIRIDIS TECHNOLOG. SF-,01 (AFU)',
+  'FANPASTICO REST.AG SF-,01 (SQ3)',
+  'SYNTHES ACC.INV. SF-,001 (SRH1)',
+  'Stifel Financial Corp. (SF) - Dividends',
+  'SUNSEEKER EN.HLDG SF -,04 (SU0)',
+  'PRIME BETEILIG.AG SF 0,10 (AUN)',
+  'MYKOGREEN BIO.INH. SF-,01 (4AW)',
+  'MOBILE FRESHNESS SF-,01 (5M1)',
+  'USTER TECHNOLOGIES SF 9,4 (3U4)',
+  'EUROGAS AG SF -,2 (MC0)',
+  'SYNTHION AG SF -,01 (SYG)',
+  'CLAIMPICKER INH. SF -,01 (OOV)',
+  'MIOOMY AG SF -,01 (SQZ)',
+  'ADF Short Interest: SF',
+  'FILMCONFECT INH. SF 1 (3VZ1)',
+  'YPSOMED HLDG SF 14,15 (OWX)',
+  'MOBILEZONE INH. SF 0,01 (TGE)',
+  'SF: Stifel Financial Corporation Co -',
+  'ADDEX THERAPEUTICS SF 1 (APE)',
+  'AIRESIS NA SF 0,25 (HPJN)',
+  'SULZER NAM. SF -,01 (SUL1)',
+  'CICOR TECHNOL.NAM. SF 10 (CRLN)',
+  'EMMI AG SF 10 (FV6)',
+  'ACTELION LTD SF 0,50 (ACT)',
+  'CIE FIN.RICHEMONT A SF 1 (RITB)',
+  'LIFEWATCH AG SF 1,3 (GUA1)',
+  'SF Diamond Co Ltd (300179)',
+  'BASILEA PHARM.NA SF 1 (PK5)',
+  'HBM HEALTH.INVEST.A SF 60 (5H5A)',
+  'CLARIANT NA SF 3,70 (CLRN)',
+  'ORIOR AG SF 4 (9OI)',
+  'BURKHALTER HLDG SF 0,20 (BKM)',
+  'PARTNERS GR.HLDG SF -,01 (P2H)',
+  '031440: SF - Korea Stock Exchange',
+  'Resident Population in San Francisco County/city, CA',
+  'Unemployment Rate in San Francisco County/city, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Hayes Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Corona Heights,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Total Homes Sold - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Mission Bay,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Financial District,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Chinatown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Marina,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94104,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Chinatown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Haight-Ashbury,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Forest Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Parnassus - Ashbury,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94104,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Sunnyside,San Francisco,CA',
+  'Zillow Home Value Index (Neighborhoods): Condominiums - Bayview,San Francisco,CA',
+  'Zillow Metrics (Counties): Inventory Supply (Beta) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Diamond Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Financial District,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Diamond Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Chinatown,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94111,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Silver Terrace,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - North Beach,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Chinatown,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Inventory Supply (Beta) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Lakeside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Total Homes Sold - Mission,San Francisco,CA',
+  'Zillow Metrics (Counties): Total Homes Sold - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Corona Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Inventory Supply (Beta) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Outer Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - North Panhandle,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Central Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Inner Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Central Sunset,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94122,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Lakeshore,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Tenderloin,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Sale (Beta) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Outer Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Noe Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Homes for Sale (Beta) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Tenderloin,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Mission Terrace,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Central Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Visitacion Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Lakeshore,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Tenderloin,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median Sale Price - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Outer Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Lakeshore,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Visitacion Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Central Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Cow Hollow,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median Sale Price - Portola,San Francisco,CA',
+  'Zillow Metrics (Counties): Homes for Sale (Beta) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Outer Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Central Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Inner Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - North Panhandle,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Potrero Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - South of Market,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Pacific Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median Sale Price - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Outer Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Silver Terrace,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Foreclosure Resales (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Bernal Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Outer Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Twin Peaks,San Francisco,CA',
+  'Zillow Metrics (Counties): Decreasing Values (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Median Sale Price - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - South of Market,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - South Beach,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Yerba Buena,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Noe Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Potrero Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Russian Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94134,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94109,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94124,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Bernal Heights,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94110,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94124,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94117,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94109,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94118,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94115,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94132,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94121,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94127,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94133,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94116,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94134,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94123,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94112,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94122,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94105,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94103,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94114,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94131,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Loss (%) - 94107,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Median List Price - San Francisco, CA',
+  'Zillow Home Value Index (Metro Areas): Condominiums - San Francisco, CA',
+  'Zillow Home Value Index (Counties): Top Tier - San Francisco, CA',
+  'Zillow Metrics (Counties): Price-to-Rent Ratio - San Francisco, CA',
+  'Zillow Home Value Index (Counties): Bottom Tier - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Excelsior,San Francisco,CA',
+  'Zillow Rent Index (Counties): Rentals All Homes - San Francisco, CA',
+  'Zillow Metrics (Metro Areas): Listings with Price Cuts (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Crocker Amazon,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Ingleside Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Miraloma Park,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Central Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Lakeshore,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Potrero Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Lakeside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Forest Knolls,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Presidio Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - South of Market,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Forest Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Lone Mountain,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Mission Terrace,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Outer Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Noe Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Westwood Highlands,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Silver Terrace,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Hayes Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Western Addition,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - North Waterfront,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Outer Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Corona Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Haight-Ashbury,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Russian Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Cow Hollow,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - North Panhandle,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Outer Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Ingleside Terrace,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Inner Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Midtown Terrace,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Central Richmond,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Inner Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Westwood Park,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Inner Sunset,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Bernal Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Glen Park,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Nob Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Pacific Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - West Portal,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Twin Peaks,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Merced Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - South Beach,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Outer Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Parnassus - Ashbury,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Yerba Buena,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Telegraph Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Increasing Values (%) - Visitacion Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Yerba Buena,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94116,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94158,San Francisco,CA',
+  'Zillow Metrics (Counties): Listings with Price Cuts (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - North Panhandle,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Listings with Price Cuts (%) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Increasing Values (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - South Beach,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Median Sale Price - San Francisco, CA',
+  'Zillow Metrics (Counties): Sale-to-List Price Ratio - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Lakeshore,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Lakeside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Lake,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Portola,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94107,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Mission,San Francisco,CA',
+  'Zillow Home Value Index (Counties): All Homes - San Francisco, CA',
+  'Zillow Home Value Index (Neighborhoods): Condominiums - Marina,San Francisco,CA',
+  'Zillow Metrics (Counties): Sold in the Past Year (%) - San Francisco, CA',
+  'Zillow Home Value Index (Neighborhoods): Condominiums - Lake,San Francisco,CA',
+  'Zillow Home Value Index (Neighborhoods): Condominiums - Lakeshore,San Francisco,CA',
+  'Zillow Home Value Index (Neighborhoods): Condominiums - Downtown,San Francisco,CA',
+  'Zillow Home Value Index (Neighborhoods): Condominiums - Mission,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Sold for Gain (%) - San Francisco, CA',
+  'Zillow Metrics (Metro Areas): Price-to-Rent Ratio - San Francisco, CA',
+  'Zillow Metrics (Metro Areas): Sold in the Past Year (%) - San Francisco, CA',
+  'Zillow Metrics (Metro Areas): Homes for Rent (Rent) - San Francisco, CA',
+  'Zillow Metrics (Metro Areas): Decreasing Values (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Sunnyside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Stonestown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Downtown,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94112,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Median Price Cut (%) - San Francisco, CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94132,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94102,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94127,San Francisco,CA',
+  'Zillow Home Value Index (Counties): Condominiums - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median List Price - Mission,San Francisco,CA',
+  'Zillow Metrics (Counties): Median Price Cut (%) - San Francisco, CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94103,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94123,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94133,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94122,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94131,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Increasing Values (%) - 94114,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94134,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94124,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94123,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94108,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94133,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94115,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94122,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94105,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94112,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94103,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94107,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94111,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94134,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94132,San Francisco,CA',
+  'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94103,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94131,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94105,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94122,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94127,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94121,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94102,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Ingleside,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94117,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94118,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94158,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94116,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94121,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Decreasing Values (%) - 94110,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Lakeside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Lakeshore,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Downtown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Tenderloin,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94110,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94117,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94115,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Portola,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold in the Past Year (%) - Lake,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94112,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94118,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94116,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94109,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94114,San Francisco,CA',
+  'Zillow Home Value Index (Counties): Middle Tier - San Francisco, CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94123,San Francisco,CA',
+  'Zillow Metrics (Counties): Increasing Values (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Chinatown,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Excelsior,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Tenderloin,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Bayview,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Marina,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Presidio,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Lake,San Francisco,CA',
+  'Zillow Metrics (Metro Areas): Sold for Loss (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Noe Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Potrero Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - South Beach,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Russian Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Visitacion Valley,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Pacific Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - Potrero Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Foreclosure Resales (%) - South of Market,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94121,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94114,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94110,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94132,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94116,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94105,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94107,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Loss (%) - Pacific Heights,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Price-to-Rent Ratio - Oceanview,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94124,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Sold for Gain (%) - 94133,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94127,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94112,San Francisco,CA',
+  'Zillow Metrics (Zip Codes): Foreclosure Resales (%) - 94131,San Francisco,CA',
+  'Zillow Metrics (Counties): Foreclosure Resales (%) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Median Sale Price - Mission,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Median Sale Price - Parkside,San Francisco,CA',
+  'Zillow Metrics (Counties): Median List Price - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Russian Hill,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Bernal Heights,San Francisco,CA',
+  'Zillow Metrics (Counties): Homes Foreclosed (Out of 10k) - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Glen Park,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Sold for Gain (%) - Outer Parkside,San Francisco,CA',
+  'Zillow Metrics (Neighborhoods): Homes for Rent (Beta) - Mission,San Francisco,CA',
+  'Zillow Metrics (Counties): Median Sale Price - San Francisco, CA',
+  'Zillow Metrics (Neighborhoods): Decreasing Values (%) - Midtown Terrace,San Francisco,CA' ]
+[1G[0J> [3Gvar nameToGet = 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA';
+var nameToGet = 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA';
+undefined
+[1G[0J> [3Gu.where(results.docs, {'name': nameToGet})
+u.where(results.docs, {'name': nameToGet})
+[ { id: 6899077,
+    source_code: 'ZILLOW',
+    source_name: 'Zillow Real Estate Research',
+    code: 'MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA',
+    name: 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+    urlize_name: 'Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA',
+    description: 'This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+    updated_at: '2014-05-07T22:06:11Z',
+    frequency: 'monthly',
+    from_date: '2010-02-28',
+    to_date: '2014-03-31',
+    column_names: [ 'Date', 'Value' ],
+    private: false,
+    type: null,
+    display_url: 'http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv' },
+  { id: 6899077,
+    source_code: 'ZILLOW',
+    source_name: 'Zillow Real Estate Research',
+    code: 'MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA',
+    name: 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+    urlize_name: 'Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA',
+    description: 'This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+    updated_at: '2014-05-07T22:06:11Z',
+    frequency: 'monthly',
+    from_date: '2010-02-28',
+    to_date: '2014-03-31',
+    column_names: [ 'Date', 'Value' ],
+    private: false,
+    type: null,
+    display_url: 'http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv' },
+  { id: 6899077,
+    source_code: 'ZILLOW',
+    source_name: 'Zillow Real Estate Research',
+    code: 'MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA',
+    name: 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+    urlize_name: 'Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA',
+    description: 'This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+    updated_at: '2014-05-07T22:06:11Z',
+    frequency: 'monthly',
+    from_date: '2010-02-28',
+    to_date: '2014-03-31',
+    column_names: [ 'Date', 'Value' ],
+    private: false,
+    type: null,
+    display_url: 'http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv' } ]
+
+[1G[0J> [3Gu.where(results.docs, {'name': nameToGet}).length
+[1G[0J> [3Gquandl.dataset({source: "ZILLOW", table: "MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA"},function(err, answer) { theAnswer = answer; console.log(answer); });
+quandl.dataset({source: "ZILLOW", table: "MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA"},function(err, answer) { theAnswer = answer; console.log(answer); });
+undefined
+[1G[0J> [3G{"errors":{},"id":6899077,"source_code":"ZILLOW","source_name":"Zillow Real Estate Research","code":"MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA","name":"Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA","urlize_name":"Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA","description":"This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.","updated_at":"2014-05-07T22:06:11Z","frequency":"monthly","from_date":"2010-02-28","to_date":"2014-03-31","column_names":["Date","Value"],"private":false,"type":null,"display_url":"http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv","data":[["2014-03-31",2178.0],["2014-02-28",2431.0],["2014-01-31",2363.0],["2013-12-31",2142.0],["2013-11-30",2321.0],["2013-10-31",1904.0],["2013-09-30",1718.0],["2013-08-31",2015.0],["2013-07-31",2138.0],["2013-06-30",2327.0],["2013-05-31",2166.0],["2013-04-30",1875.0],["2013-03-31",1377.0],["2013-02-28",2215.0],["2013-01-31",2998.0],["2012-12-31",2609.0],["2012-11-30",2120.0],["2012-10-31",2137.0],["2012-09-30",2115.0],["2012-08-31",2130.0],["2012-07-31",1991.0],["2012-06-30",1983.0],["2012-05-31",1707.0],["2012-04-30",1682.0],["2012-03-31",1767.0],["2012-02-29",1502.0],["2012-01-31",1258.0],["2011-12-31",1057.0],["2011-11-30",1263.0],["2011-10-31",1249.0],["2011-09-30",1045.0],["2011-08-31",815.0],["2011-07-31",653.0],["2011-06-30",655.0],["2011-05-31",720.0],["2011-04-30",692.0],["2011-03-31",958.0],["2011-02-28",931.0],["2011-01-31",843.0],["2010-12-31",491.0],["2010-11-30",239.0],["2010-10-31",233.0],["2010-09-30",220.0],["2010-08-31",220.0],["2010-07-31",119.0],["2010-06-30",101.0],["2010-05-31",115.0],["2010-04-30",91.0],["2010-03-31",51.0],["2010-02-28",40.0]]}
+theAnswer
+theAnswer
+'{"errors":{},"id":6899077,"source_code":"ZILLOW","source_name":"Zillow Real Estate Research","code":"MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA","name":"Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA","urlize_name":"Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA","description":"This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.","updated_at":"2014-05-07T22:06:11Z","frequency":"monthly","from_date":"2010-02-28","to_date":"2014-03-31","column_names":["Date","Value"],"private":false,"type":null,"display_url":"http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv","data":[["2014-03-31",2178.0],["2014-02-28",2431.0],["2014-01-31",2363.0],["2013-12-31",2142.0],["2013-11-30",2321.0],["2013-10-31",1904.0],["2013-09-30",1718.0],["2013-08-31",2015.0],["2013-07-31",2138.0],["2013-06-30",2327.0],["2013-05-31",2166.0],["2013-04-30",1875.0],["2013-03-31",1377.0],["2013-02-28",2215.0],["2013-01-31",2998.0],["2012-12-31",2609.0],["2012-11-30",2120.0],["2012-10-31",2137.0],["2012-09-30",2115.0],["2012-08-31",2130.0],["2012-07-31",1991.0],["2012-06-30",1983.0],["2012-05-31",1707.0],["2012-04-30",1682.0],["2012-03-31",1767.0],["2012-02-29",1502.0],["2012-01-31",1258.0],["2011-12-31",1057.0],["2011-11-30",1263.0],["2011-10-31",1249.0],["2011-09-30",1045.0],["2011-08-31",815.0],["2011-07-31",653.0],["2011-06-30",655.0],["2011-05-31",720.0],["2011-04-30",692.0],["2011-03-31",958.0],["2011-02-28",931.0],["2011-01-31",843.0],["2010-12-31",491.0],["2010-11-30",239.0],["2010-10-31",233.0],["2010-09-30",220.0],["2010-08-31",220.0],["2010-07-31",119.0],["2010-06-30",101.0],["2010-05-31",115.0],["2010-04-30",91.0],["2010-03-31",51.0],["2010-02-28",40.0]]}'
+[1G[0J> [3GtheAnswer = JSON.parse(theAnswer);
+theAnswer = JSON.parse(theAnswer);
+{ errors: {},
+  id: 6899077,
+  source_code: 'ZILLOW',
+  source_name: 'Zillow Real Estate Research',
+  code: 'MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA',
+  name: 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+  urlize_name: 'Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA',
+  description: 'This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+  updated_at: '2014-05-07T22:06:11Z',
+  frequency: 'monthly',
+  from_date: '2010-02-28',
+  to_date: '2014-03-31',
+  column_names: [ 'Date', 'Value' ],
+  private: false,
+  type: null,
+  display_url: 'http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv',
+  data: 
+   [ [ '2014-03-31', 2178 ],
+     [ '2014-02-28', 2431 ],
+     [ '2014-01-31', 2363 ],
+     [ '2013-12-31', 2142 ],
+     [ '2013-11-30', 2321 ],
+     [ '2013-10-31', 1904 ],
+     [ '2013-09-30', 1718 ],
+     [ '2013-08-31', 2015 ],
+     [ '2013-07-31', 2138 ],
+     [ '2013-06-30', 2327 ],
+     [ '2013-05-31', 2166 ],
+     [ '2013-04-30', 1875 ],
+     [ '2013-03-31', 1377 ],
+     [ '2013-02-28', 2215 ],
+     [ '2013-01-31', 2998 ],
+     [ '2012-12-31', 2609 ],
+     [ '2012-11-30', 2120 ],
+     [ '2012-10-31', 2137 ],
+     [ '2012-09-30', 2115 ],
+     [ '2012-08-31', 2130 ],
+     [ '2012-07-31', 1991 ],
+     [ '2012-06-30', 1983 ],
+     [ '2012-05-31', 1707 ],
+     [ '2012-04-30', 1682 ],
+     [ '2012-03-31', 1767 ],
+     [ '2012-02-29', 1502 ],
+     [ '2012-01-31', 1258 ],
+     [ '2011-12-31', 1057 ],
+     [ '2011-11-30', 1263 ],
+     [ '2011-10-31', 1249 ],
+     [ '2011-09-30', 1045 ],
+     [ '2011-08-31', 815 ],
+     [ '2011-07-31', 653 ],
+     [ '2011-06-30', 655 ],
+     [ '2011-05-31', 720 ],
+     [ '2011-04-30', 692 ],
+     [ '2011-03-31', 958 ],
+     [ '2011-02-28', 931 ],
+     [ '2011-01-31', 843 ],
+     [ '2010-12-31', 491 ],
+     [ '2010-11-30', 239 ],
+     [ '2010-10-31', 233 ],
+     [ '2010-09-30', 220 ],
+     [ '2010-08-31', 220 ],
+     [ '2010-07-31', 119 ],
+     [ '2010-06-30', 101 ],
+     [ '2010-05-31', 115 ],
+     [ '2010-04-30', 91 ],
+     [ '2010-03-31', 51 ],
+     [ '2010-02-28', 40 ] ] }
+[1G[0J> [3GtheAnswer
+theAnswer
+{ errors: {},
+  id: 6899077,
+  source_code: 'ZILLOW',
+  source_name: 'Zillow Real Estate Research',
+  code: 'MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA',
+  name: 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+  urlize_name: 'Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA',
+  description: 'This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+  updated_at: '2014-05-07T22:06:11Z',
+  frequency: 'monthly',
+  from_date: '2010-02-28',
+  to_date: '2014-03-31',
+  column_names: [ 'Date', 'Value' ],
+  private: false,
+  type: null,
+  display_url: 'http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv',
+  data: 
+   [ [ '2014-03-31', 2178 ],
+     [ '2014-02-28', 2431 ],
+     [ '2014-01-31', 2363 ],
+     [ '2013-12-31', 2142 ],
+     [ '2013-11-30', 2321 ],
+     [ '2013-10-31', 1904 ],
+     [ '2013-09-30', 1718 ],
+     [ '2013-08-31', 2015 ],
+     [ '2013-07-31', 2138 ],
+     [ '2013-06-30', 2327 ],
+     [ '2013-05-31', 2166 ],
+     [ '2013-04-30', 1875 ],
+     [ '2013-03-31', 1377 ],
+     [ '2013-02-28', 2215 ],
+     [ '2013-01-31', 2998 ],
+     [ '2012-12-31', 2609 ],
+     [ '2012-11-30', 2120 ],
+     [ '2012-10-31', 2137 ],
+     [ '2012-09-30', 2115 ],
+     [ '2012-08-31', 2130 ],
+     [ '2012-07-31', 1991 ],
+     [ '2012-06-30', 1983 ],
+     [ '2012-05-31', 1707 ],
+     [ '2012-04-30', 1682 ],
+     [ '2012-03-31', 1767 ],
+     [ '2012-02-29', 1502 ],
+     [ '2012-01-31', 1258 ],
+     [ '2011-12-31', 1057 ],
+     [ '2011-11-30', 1263 ],
+     [ '2011-10-31', 1249 ],
+     [ '2011-09-30', 1045 ],
+     [ '2011-08-31', 815 ],
+     [ '2011-07-31', 653 ],
+     [ '2011-06-30', 655 ],
+     [ '2011-05-31', 720 ],
+     [ '2011-04-30', 692 ],
+     [ '2011-03-31', 958 ],
+     [ '2011-02-28', 931 ],
+     [ '2011-01-31', 843 ],
+     [ '2010-12-31', 491 ],
+     [ '2010-11-30', 239 ],
+     [ '2010-10-31', 233 ],
+     [ '2010-09-30', 220 ],
+     [ '2010-08-31', 220 ],
+     [ '2010-07-31', 119 ],
+     [ '2010-06-30', 101 ],
+     [ '2010-05-31', 115 ],
+     [ '2010-04-30', 91 ],
+     [ '2010-03-31', 51 ],
+     [ '2010-02-28', 40 ] ] }
+[1G[0J> [3GtheAnswer.data
+theAnswer.data
+[ [ '2014-03-31', 2178 ],
+  [ '2014-02-28', 2431 ],
+  [ '2014-01-31', 2363 ],
+  [ '2013-12-31', 2142 ],
+  [ '2013-11-30', 2321 ],
+  [ '2013-10-31', 1904 ],
+  [ '2013-09-30', 1718 ],
+  [ '2013-08-31', 2015 ],
+  [ '2013-07-31', 2138 ],
+  [ '2013-06-30', 2327 ],
+  [ '2013-05-31', 2166 ],
+  [ '2013-04-30', 1875 ],
+  [ '2013-03-31', 1377 ],
+  [ '2013-02-28', 2215 ],
+  [ '2013-01-31', 2998 ],
+  [ '2012-12-31', 2609 ],
+  [ '2012-11-30', 2120 ],
+  [ '2012-10-31', 2137 ],
+  [ '2012-09-30', 2115 ],
+  [ '2012-08-31', 2130 ],
+  [ '2012-07-31', 1991 ],
+  [ '2012-06-30', 1983 ],
+  [ '2012-05-31', 1707 ],
+  [ '2012-04-30', 1682 ],
+  [ '2012-03-31', 1767 ],
+  [ '2012-02-29', 1502 ],
+  [ '2012-01-31', 1258 ],
+  [ '2011-12-31', 1057 ],
+  [ '2011-11-30', 1263 ],
+  [ '2011-10-31', 1249 ],
+  [ '2011-09-30', 1045 ],
+  [ '2011-08-31', 815 ],
+  [ '2011-07-31', 653 ],
+  [ '2011-06-30', 655 ],
+  [ '2011-05-31', 720 ],
+  [ '2011-04-30', 692 ],
+  [ '2011-03-31', 958 ],
+  [ '2011-02-28', 931 ],
+  [ '2011-01-31', 843 ],
+  [ '2010-12-31', 491 ],
+  [ '2010-11-30', 239 ],
+  [ '2010-10-31', 233 ],
+  [ '2010-09-30', 220 ],
+  [ '2010-08-31', 220 ],
+  [ '2010-07-31', 119 ],
+  [ '2010-06-30', 101 ],
+  [ '2010-05-31', 115 ],
+  [ '2010-04-30', 91 ],
+  [ '2010-03-31', 51 ],
+  [ '2010-02-28', 40 ] ]
+[1G[0J> [3GtheAnswer.data.length
+theAnswer.data.length
+50
+[1G[0J> [3GtheAnswer.data[0]
+theAnswer.data[0]
+[ '2014-03-31', 2178 ]
+[1G[0J> [3GtheAnswer
+theAnswer
+{ errors: {},
+  id: 6899077,
+  source_code: 'ZILLOW',
+  source_name: 'Zillow Real Estate Research',
+  code: 'MCOUNTY_NUMBEROFHOMESFORRENT_ALLHOMES_SANFRANCISCOCA',
+  name: 'Zillow Metrics (Counties): Homes for Rent (Rent) - San Francisco, CA',
+  urlize_name: 'Zillow-Metrics-Counties-Homes-for-Rent-Rent-San-Francisco-CA',
+  description: 'This metric is currently in beta. The number of homes for rent on Zillow. This data is calculated by Zillow Real Estate Research (www.zillow.com/research) using their database of 110 million homes.',
+  updated_at: '2014-05-07T22:06:11Z',
+  frequency: 'monthly',
+  from_date: '2010-02-28',
+  to_date: '2014-03-31',
+  column_names: [ 'Date', 'Value' ],
+  private: false,
+  type: null,
+  display_url: 'http://files.zillowstatic.com/research/public/County/County_NumberOfHomesForRent_AllHomes.csv',
+  data: 
+   [ [ '2014-03-31', 2178 ],
+     [ '2014-02-28', 2431 ],
+     [ '2014-01-31', 2363 ],
+     [ '2013-12-31', 2142 ],
+     [ '2013-11-30', 2321 ],
+     [ '2013-10-31', 1904 ],
+     [ '2013-09-30', 1718 ],
+     [ '2013-08-31', 2015 ],
+     [ '2013-07-31', 2138 ],
+     [ '2013-06-30', 2327 ],
+     [ '2013-05-31', 2166 ],
+     [ '2013-04-30', 1875 ],
+     [ '2013-03-31', 1377 ],
+     [ '2013-02-28', 2215 ],
+     [ '2013-01-31', 2998 ],
+     [ '2012-12-31', 2609 ],
+     [ '2012-11-30', 2120 ],
+     [ '2012-10-31', 2137 ],
+     [ '2012-09-30', 2115 ],
+     [ '2012-08-31', 2130 ],
+     [ '2012-07-31', 1991 ],
+     [ '2012-06-30', 1983 ],
+     [ '2012-05-31', 1707 ],
+     [ '2012-04-30', 1682 ],
+     [ '2012-03-31', 1767 ],
+     [ '2012-02-29', 1502 ],
+     [ '2012-01-31', 1258 ],
+     [ '2011-12-31', 1057 ],
+     [ '2011-11-30', 1263 ],
+     [ '2011-10-31', 1249 ],
+     [ '2011-09-30', 1045 ],
+     [ '2011-08-31', 815 ],
+     [ '2011-07-31', 653 ],
+     [ '2011-06-30', 655 ],
+     [ '2011-05-31', 720 ],
+     [ '2011-04-30', 692 ],
+     [ '2011-03-31', 958 ],
+     [ '2011-02-28', 931 ],
+     [ '2011-01-31', 843 ],
+     [ '2010-12-31', 491 ],
+     [ '2010-11-30', 239 ],
+     [ '2010-10-31', 233 ],
+     [ '2010-09-30', 220 ],
+     [ '2010-08-31', 220 ],
+     [ '2010-07-31', 119 ],
+     [ '2010-06-30', 101 ],
+     [ '2010-05-31', 115 ],
+     [ '2010-04-30', 91 ],
+     [ '2010-03-31', 51 ],
+     [ '2010-02-28', 40 ] ] }
+[1G[0J> [3G
